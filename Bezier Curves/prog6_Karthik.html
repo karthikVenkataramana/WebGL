@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+
+    <meta charset="utf-8" />
+    <title>Bezier curves</title>
+  </head>
+
+  <body onload="main()">
+<!-- In <body> --> 
+     <div style="float: left;">
+    <canvas id="webgl"   width="1000" height="700">
+    Please use a browser that supports "canvas"
+    </canvas>
+    </div>
+
+   <div style="float:left;">
+   <h2>Color codes:</h2>  
+      
+        <h3> &nbsp; Red : P0 <br>    
+       &nbsp; Green : P1 <br>  
+        &nbsp; Blue : P2 <br>   
+       &nbsp; Yellow : P3 <br>  
+        &nbsp; Purple : P4 <br> 
+        &nbsp; Cyan : P5 <br>
+        &nbsp; White : P6 <br> 
+        </h3> 
+      
+  
+   <h3>Angle X:   <label id="angle_x"> </label> &nbsp;&nbsp;&nbsp; &#8593;: Key 'Right arrow', &#8595;: key 'Left arrow'  <br/> <br/>
+   Angle Y:   <label id="angle_y"> </label>&nbsp;&nbsp;&nbsp;&#8593;: Key 'Up Arrow', &#8595;: Key 'down arrow' <br/> <br/>
+   Angle Z:   <label id="angle_z"> </label> &nbsp;&nbsp;&nbsp;&#8593; Key 'z', &#8595;: Key 'c' <br/> <br/>
+
+    Zoom in: Key 'x' &nbsp;&nbsp;&nbsp;&nbsp; Zoom out: Key 'a' </h3> <br/> <br/>
+ <h1> &nbsp; <u> Controls: </u></h1>
+   &nbsp;&nbsp;<button type="button" onclick="reset()"> <h3> Reset Me </h3></button>  &nbsp; &nbsp; &nbsp;  
+   &nbsp;<button type="button" onclick="change()"><h3> Change color </h3></button> &nbsp;&nbsp;
+    &nbsp;<button type="button" onclick="defaultzoom()"><h3> Default zoom </h3></button> <br> <br>
+   </div>
+
+    <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/webgl-utils.js"></script>
+    <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/webgl-debug.js"></script>
+    <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/cuon-utils.js"></script>
+    <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/cuon-matrix.js"></script>
+    <script src="prog6_Karthik.js"></script>
+  </body>
+  <p id="control_points"> </p> 
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Solar System</title>
+
+</head>
+
+<body onload="main()">
+    <div>
+        <div style="float: left;">
+            <canvas id="webgl" width="750" height="650">
+    Please use a browser that supports "canvas"
+    </canvas>
+            <script src="webgl-utils.js"></script>
+            <script src="webgl-debug.js"></script>
+            <script src="cuon-utils.js"></script>
+            <script src="cuon-matrix.js"></script>
+            <script src="prog5_Karthik.js"></script>
+
+        </div>
+        <div style="float: left;margin-left: 30px;">
+            <h3> Color codes</h3>
+            <p> Red, Orange -Sun </p>
+            <p> Blue- EARTH </p>
+            <p> Fade White- Moon </p>
+            <p> Gray - Mercury </p>
+            <p> Fade Purple,Pink- Jupiter </p>
+            Zoom in: <label id="zoom_in"> </label>&nbsp;&nbsp;&nbsp; &#8593;: SHIFT <br/> <br/> Zoom out:
+            <lable id="zoom_out"> </lable> &nbsp;&nbsp;&nbsp; &#8595; : ALT <br/> <br/> +X axis: <label id="zoom_in"> </label>&nbsp;&nbsp;&nbsp; &#8593;: Right Arrow &nbsp;&nbsp;&nbsp; -X axis:
+            <lable id="zoom_out"> </lable> &nbsp;&nbsp;&nbsp; &#8595; : Left Arrow <br/> <br/> +Y axis: <label id="zoom_in"> </label>&nbsp;&nbsp;&nbsp; &#8593;: Down Arrow &nbsp;&nbsp;&nbsp; -Y axis :
+            <lable id="zoom_out"> </lable> &nbsp;&nbsp;&nbsp; &#8595; : Up Arrow<br/> <br/> +Pitch X: <label id="zoom_in"> </label>&nbsp;&nbsp;&nbsp; &#8593;: x &nbsp;&nbsp;&nbsp; -Pitch X:
+            <lable id="zoom_out"> </lable> &nbsp;&nbsp;&nbsp; &#8595; : a <br/> <br/> + Yaw Y <label id="zoom_in"> </label>&nbsp;&nbsp;&nbsp; &#8593;: y &nbsp;&nbsp;&nbsp; - Yaw Y:
+            <lable id="zoom_out"> </lable> &nbsp;&nbsp;&nbsp; &#8595; : b <br/> <br/> + Roll Z: <label id="zoom_in"> </label>&nbsp;&nbsp;&nbsp; &#8593;: z &nbsp;&nbsp;&nbsp; - Roll Z:
+            <lable id="zoom_out"> </lable> &nbsp;&nbsp;&nbsp; &#8595; : c <br/> <br/>
+            <h3> &nbsp; Animation: </h3>
+            &nbsp;&nbsp;<button type="button" onclick="startAnimation()"> On </button> &nbsp; &nbsp;
+            <button type="button" onclick="stopAnimation()"> Off </button>
+            <br>
+
+            <h3> &nbsp; Speed: </h3>
+            &nbsp;&nbsp;<button type="button" onclick="slow()"> Slow </button> &nbsp; &nbsp;
+            <button type="button" onclick="medium()"> Medium </button> &nbsp;
+            <button type="button" onclick="fast()"> Fast </button>
+
+        </div>
+
+</body>
+
+</html>

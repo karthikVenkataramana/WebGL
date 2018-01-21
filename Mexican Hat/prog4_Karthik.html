@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Bi Variate Function</title>
+  </head>
+
+  <body onload="main()">
+  <div style="float: left;">
+    <canvas id="webgl" width="800" height="600">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/webgl-utils.js"></script>
+    <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/webgl-debug.js"></script>
+    <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/cuon-utils.js"></script>
+    <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/cuon-matrix.js"></script>
+    <script src="prog4_Karthik.js"></script>
+    </div>
+  <div style="float: left; margin-top: 30px;">
+   Angle X:   <label id="angle_x"> </label> &nbsp;&nbsp;&nbsp; &#8593;: Key 'x', &#8595;: key 'a'  <br/> <br/>
+   Angle Y:   <label id="angle_y"> </label>&nbsp;&nbsp;&nbsp;&#8593;: Key 'y', &#8595;: Key 'b' <br/> <br/>
+   Angle Z:   <label id="angle_z"> </label> &nbsp;&nbsp;&nbsp;&#8593; Key 'z', &#8595;: Key 'c' <br/> <br/>
+   looking At X: <label id="look_at_x"> </label>  &nbsp;&nbsp;&nbsp; &#8593; :Right arrow, &#8595;: Left arrow <br/> <br/>
+   looking At Y: <label id="look_at_y"> </label> &nbsp;&nbsp;&nbsp; &#8593; :Up arrow, &#8595;: Down arrow <br/> <br/>
+   looking At Z: <label id="look_at_z"> </label>&nbsp;&nbsp;&nbsp;  &#8593; :Forward - slash, &#8595;: Back - slash <br/> <br/>
+   Zoom in: <label id="zoom_in"> </label>&nbsp;&nbsp;&nbsp;  &#8593;: SHIFT <br/> <br/>
+   Zoom out: <lable id="zoom_out"> </lable> &nbsp;&nbsp;&nbsp; &#8595; : ALT <br/> <br/>
+   
+  <button onclick="reset();"> Reset </button>
+  </div>
+  </body>
+</html>

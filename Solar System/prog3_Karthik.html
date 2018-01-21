@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Solar System</title> 
+  
+  </head>
+
+  <body onload="main()">
+ <div>
+ <div style="float: left;">
+    <canvas id="webgl" width="1000" height="625">
+    Please use a browser that supports "canvas"
+    </canvas>
+     <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/webgl-utils.js"></script>
+    <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/webgl-debug.js"></script>
+    <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/cuon-utils.js"></script>
+   <script src="http://www.cse.unt.edu/~renka/5220/matsuda/lib/cuon-matrix.js"></script>
+    <script src="prog3_Karthik.js"></script>
+  </div>
+   <div>
+   <h3> Color codes</h3>
+   <p>  Red, Orange -Sun </p>
+   <p>  Blue- EARTH </p>
+   <p>  Fade White- Moon </p>
+   <p>  Gray - Mercury </p>
+   <p>  Orangish Brown -  Venus </p>
+   <p>  Reddish Brown - Mars </p>
+   <p>  Fade Purple,Pink- Jupiter </p> 
+  
+   <h3> &nbsp; Animation: </h3>
+   &nbsp;&nbsp;<button type="button" onclick="startAnimation()"> On </button>  &nbsp;
+   &nbsp;<button type="button" onclick="stopAnimation()"> Off </button>
+    <br>
+   <h3> &nbsp; Speed: </h3>
+   &nbsp;&nbsp;<button type="button" onclick="slow()"> Slow </button>  &nbsp;
+   &nbsp;<button type="button" onclick="medium()"> Medium </button>
+   &nbsp;<button type="button" onclick="fast()"> Fast </button>
+
+   </div>
+
+ </body>
+</html>
